@@ -1,0 +1,26 @@
+{
+	"name": "@abydin/convert-array-to-object",
+	"version": "2.2.0",
+	"description": "This s a lightweight and versatile npm package designed to streamline the transformation of arrays into structured JavaScript objects. Whether you're dealing with data manipulation, API responses, or form submissions, this utility simplifies the process of converting arrays into key-value paired objects effortlessly.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Abideen Ayinde",
+	"license": "MIT",
+	"keywords": [
+		"convert-arr-to-obj",
+		"array conversion",
+		"object transformation",
+		"data manipulation",
+		"JavaScript utility",
+		"array to object mapping",
+		"array manipulation",
+		"callback function",
+		"key-based transformation",
+		"data processing",
+		"array transformation",
+		"utility function",
+		"data structure conversion"
+	]
+}
