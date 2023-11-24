@@ -11,13 +11,13 @@ Effortlessly convert arrays into structured JavaScript objects with the `convert
 install with Npm
 
 ```bash
-npm install convert-array-to-object
+npm install @abydin/convert-array-to-object
 ```
 
 install with Yarn
 
 ```bash
-yarn add convert-array-to-object
+yarn add @abydin/convert-array-to-object
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ Here are some examples of how to use the `convertArrToObj` function:
 ## Usage
 
 ```javascript
-const convertArrToObj = require("convert-arr-to-obj");
+const convertArrToObj = require("@abydin/convert-array-to-object");
 
 // Example usage:
 const inputArray = [
