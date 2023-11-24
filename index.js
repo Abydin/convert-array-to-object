@@ -1,23 +1,13 @@
 exports.convertArrToObj = ({ arr, callBack, key, reArr = false }) => {
+	const reducer = (accumulator, currentValue) => {
+		const keyValue = key ? currentValue[key] : currentValue;
+		accumulator[keyValue] = callBack ? callBack(currentValue) : currentValue;
+		return accumulator;
+	};
+
 	if (reArr) {
-		if (key) {
-			return Object.values(
-				arr?.reduce(
-					(a, v) => ({ ...a, [v[key]]: callBack ? callBack(v) : v }),
-					{}
-				)
-			);
-		}
-		return arr?.reduce(
-			(a, v) => ({ ...a, [v[key]]: callBack ? callBack(v) : v }),
-			{}
-		);
+		return Object.values(arr?.reduce(reducer, {}));
 	}
-	if (key) {
-		return arr?.reduce(
-			(a, v) => ({ ...a, [v[key]]: callBack ? callBack(v) : v }),
-			{}
-		);
-	}
-	return arr?.reduce((a, v) => ({ ...a, [v]: callBack ? callBack(v) : v }), {});
+
+	return arr?.reduce(reducer, {});
 };
